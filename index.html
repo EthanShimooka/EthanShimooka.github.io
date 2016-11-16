@@ -47,14 +47,14 @@ body{
 		
 		
 		.container {
-		     background-color:#ffffff;
+			     background-color: rgba(255,255,255,0.85);
     box-shadow: -1px 5px 4px #d6d7d8;
     padding:0 15px 0 15px;
 }
 		
 		
 		html { 
-background: url(img/bg2.png) no-repeat center center fixed; 
+background: url(img/bg1.jpg) no-repeat center center fixed; 
 -webkit-background-size: cover;
 -moz-background-size: cover;
 -o-background-size: cover;
@@ -65,7 +65,25 @@ background-size: cover;
 {
     text-decoration: none;
 }
-		
+		div {
+    border-radius: 25px;
+}
+
+
+@media (min-width: 0px) {
+    .container-small {
+        width: 768px;
+		  background-color: rgba(255,255,255,0.85);
+    box-shadow: -1px 5px 4px #d6d7d8;
+    padding:0 15px 0 15px;
+    }
+    .container-large {
+	  background-color: rgba(255,255,255,0.85);
+    box-shadow: -1px 5px 4px #d6d7d8;
+    padding:0 15px 0 15px;
+        width: 970px;
+    } 
+} 
 		
     </style>
 
@@ -78,13 +96,14 @@ background-size: cover;
 
 <p> </p>
 <center>
-    <div class= "container">
-        <div >
+
+        
 		<p> </p> <p> </p>
            <img border="0" alt="" src="img/logo1.png"  style="text-decoration: none"width="500" height="200">
          
 			
-
+    <div class= "container-small">
+<div >
 			   
 			
         </div>

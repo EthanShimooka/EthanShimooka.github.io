@@ -100,7 +100,7 @@ background-size: cover;
 
         
 		<p> </p> <p> </p>
-           <img border="0" alt="" src="img/logo1.png"  style="text-decoration: none"width="500" height="200">
+           <img border="0" alt="" src="img/logo2.png"  style="text-decoration: none"width="500" height="200">
          
 			
     <div class= "container-small">
@@ -128,34 +128,44 @@ background-size: cover;
 
 
         <p><h2>Games</h2></p>
-      
+              <!-- ------------------------------------------------------------------------------------------------------------>
+
 	<div class="col-xs-12" style="height:50px;"></div>
+        <!-- ------------------------------------------------------------------------------------------------------------>
 
+  <div class= "col-lg-2 col-md-1 col-sm-1 col-xs-1" > </div>       
+  <h3>   <p class="expand" id="expand-2" align="left"> Birds At Arms</p></h3> <!-- Jquery Trigger-->
+				
+	<div class="expandable" id="expandable-2">
 
-	  <div class= "row">
-  
-
-            <div class= "col-lg-2 col-md-1 col-sm-0 col-xs-0" > </div>
-            <div class= "col-lg-6 col-md-4 col-sm-6 col-xs-12" >
-                <h4>Birds At Arms </h4>
-                Birds At Arms at its core, is a 2D simplification of the lane-based multiplayer online battle arena (MOBA), that can be played casually in about 4 minutes. Developed in C++ with SDL 2.0
-			<p>	<p></p>
+	  <div class= "row">	
+      
+		<div class= "col-lg-1 col-md-1 col-sm-1 col-xs-0" > </div>       
+	    <div class= "col-lg-6 col-md-5col-sm-5 col-xs-12" > Birds At Arms at its core, is a 2D simplification of the lane-based multiplayer online battle arena (MOBA), that can be played casually in about 4 minutes. Developed in C++ with SDL 2.0 </div>
+	    <div class= "col-lg-4 col-md-5 col-sm-5 col-xs-12" >
+		<p>	<p></p>
 			<b>	<a href="http://www.birdsatarms.com/">>> Website</a>
 			<a href="https://steamcommunity.com/sharedfiles/filedetails/?id=691033328&searchtext=birds+at+arms">>> Steam Greenlight</a>
 			<a href="#">>> Design Documents</a> </b>
-</p>
-				
-            </div>
+			</p>				
+		</div>
+		<div class= "col-lg-1 col-md-1 col-sm-1 col-xs-0" > </div>       
+		<div class"clearfix visible-sm"></div>
+	 
+	    </div>
 
- 
-            <div class"clearfix visible-sm"></div>
+	  <div class= "row">	
+        <div class= "col-lg-2 col-md-2 col-sm-0 col-xs-0" > </div>
+        <div class= "col-lg-2 col-md-2 col-sm-6 col-xs-12" > <img src="img/pix.png" class="img-rounded" alt="Cinque Terre" width="304" height="236"></div>  <!-- Image1-->
+        <div class= "col-lg-2 col-md-2 col-sm-6 col-xs-12" > <img src="img/pix.png" class="img-rounded" alt="Cinque Terre" width="304" height="236"></div>  <!-- Image1-->
+		<div class= "col-lg-2 col-md-2 col-sm-6 col-xs-12" > <img src="img/pix.png" class="img-rounded" alt="Cinque Terre" width="304" height="236"></div>  <!-- Image1-->
+        <div class= "col-lg-2 col-md-2 col-sm-6 col-xs-12" > <img src="img/pix.png" class="img-rounded" alt="Cinque Terre" width="304" height="236"></div>  <!-- Image1-->
+        <div class= "col-lg-2 col-md-2 col-sm-0 col-xs-0" > </div>
 
-        <div class= "col-lg-2 col-md-4 col-sm-6 col-xs-12" >
-           <img src="img/pix.png" class="img-rounded" alt="Cinque Terre" width="304" height="236">
-            
-        </div>
-        <div class= "col-lg-2 col-md-1 col-sm-0 col-xs-0" > </div>
-    </div>
+   </div>
+   </div>
+	       <!-- ------------------------------------------------------------------------------------------------------------>
+
 
 	<div class="col-xs-12" style="height:50px;"></div>
 	
@@ -180,10 +190,12 @@ background-size: cover;
         </div>
         <div class= "col-lg-2 col-md-1 col-sm-0 col-xs-0" > </div>
     </div>
-	
+	        <!-- ------------------------------------------------------------------------------------------------------------>
+
 		<div class="col-xs-12" style="height:50px;"></div>
 
 	<p><h2>Other</h2></p>
+        <!-- ------------------------------------------------------------------------------------------------------------>
 
   <div class= "row">
 
@@ -203,6 +215,7 @@ background-size: cover;
         </div>
         <div class= "col-lg-2 col-md-1 col-sm-0 col-xs-0" > </div>
     </div>
+        <!-- ------------------------------------------------------------------------------------------------------------>
 	
 		<div class="col-xs-12" style="height:50px;"></div>
 
@@ -238,6 +251,21 @@ background-size: cover;
 
     <script src="http://code.jquery.com/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
+	<script>
+	$('.expand').click(function(){
+    target_num = $(this).attr('id').split('-')[1];
+    content_id = '#expandable-'.concat(target_num);
+    $(content_id).slideToggle('fast');
+});
+
+$( "#collapse" ).accordion({
+    collapsible: true,
+    active: false
+});
+
+	</script>
 </center>
 </body>
 </html>
+
+
